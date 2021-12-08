@@ -237,7 +237,7 @@ class HomeScreen extends StatelessWidget {
                           child: Image.asset('assets/images/gmail.png'),
                           onPressed: () async {
                             const url =
-                                'mailto:arif.suhaimijb@gmail.com?subject=I am interested with your offer.';
+                                'mailto:adibazhar0601@gmail.com?subject=I am interested with your offer.';
                             // const url = 'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=hasanmahani08@gmail.com&su=I+am+using+MIN+pa08+so&ui=2&tf=1';
                             if (await canLaunch(url)) {
                               await launch(url);
@@ -260,8 +260,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           child: Image.asset('assets/images/instagram.png'),
                           onPressed: () async {
-                            const url =
-                                'https://www.instagram.com/riffsuhaimi/';
+                            const url = 'https://www.instagram.com/adibazhar_/';
                             if (await canLaunch(url)) {
                               await launch(url);
                             } else {
@@ -305,7 +304,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           child: Image.asset('assets/images/whatsapp.png'),
                           onPressed: () async {
-                            const url = 'https://wa.me/+60135339396';
+                            const url = 'https://wa.me/+601131768044';
                             if (await canLaunch(url)) {
                               await launch(url);
                             } else {
@@ -336,7 +335,15 @@ class HomeScreen extends StatelessWidget {
 }
 
 var selectedloc = 0;
-List<String> locs = ['Johor (JHR)', 'Melaka (MLK)'];
+List<String> locs = [
+  'Selangor (SLG)',
+  'Pahang (PHG)',
+  'Negeri Sembilan (NS9)',
+  'Kedah (KDH)',
+  'Perak (PRK)',
+  'Kuala Lumpur (KL)',
+  'Putrajay (PTJ)'
+];
 
 class HomeTop extends StatefulWidget {
   @override
@@ -637,7 +644,7 @@ List<City> cities = [
     image: "assets/images/myvi.png",
     name: "Myvi",
     monthyear: "mileage 9000km",
-    oldprice: "300/day",
+    oldprice: "3400/day",
     newprice: "150/day",
     discount: "50",
   ),
@@ -650,12 +657,12 @@ List<City> cities = [
     discount: "40",
   ),
   City(
-    image: "assets/images/Tehran.png",
-    name: "Tehran",
-    monthyear: "Far 1399",
-    oldprice: "258500",
-    newprice: "150000",
-    discount: "58",
+    image: "assets/images/alza.webp",
+    name: "Alza",
+    monthyear: "mileage 7000km",
+    oldprice: "900",
+    newprice: "500",
+    discount: "20",
   ),
 ];
 

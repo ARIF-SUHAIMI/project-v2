@@ -54,7 +54,7 @@ class StackDown extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Text('Best Deals for Next 6 Months',
+            Text('Best Deals For You',
                 style: TextStyle(fontWeight: FontWeight.w900, fontSize: 20)),
             ListView(
               scrollDirection: Axis.vertical,
@@ -62,36 +62,36 @@ class StackDown extends StatelessWidget {
               physics: ClampingScrollPhysics(),
               children: <Widget>[
                 FlightCard(
-                  date: "01 Far 1399",
-                  percentOff: "34",
-                  price: "500",
+                  date: "-",
+                  percentOff: "50",
+                  price: "150",
                   rating: 3.5,
-                  flightTo: "Rafsanjani",
-                  oldprice: "999",
+                  flightTo: "MYVI",
+                  oldprice: "300",
                 ),
                 FlightCard(
-                  date: "02 Esf 1398",
-                  percentOff: "45",
-                  price: "600",
+                  date: "-",
+                  percentOff: "40",
+                  price: "400",
                   rating: 5,
-                  flightTo: "Rafsanjani",
-                  oldprice: "1000",
+                  flightTo: "AXIA",
+                  oldprice: "600",
                 ),
                 FlightCard(
-                  date: "01 Far 1399",
+                  date: "-",
                   percentOff: "34",
                   price: "300",
-                  rating: 3.5,
-                  flightTo: "Rafsanjani",
+                  rating: 4.5,
+                  flightTo: "AXIA",
                   oldprice: "999",
                 ),
                 FlightCard(
-                  date: "02 Esf 1398",
-                  percentOff: "45",
-                  price: "700",
+                  date: "-",
+                  percentOff: "58",
+                  price: "200",
                   rating: 5,
-                  flightTo: "Rafsanjani",
-                  oldprice: "1000",
+                  flightTo: "ALZA",
+                  oldprice: "400",
                 ),
               ],
             )
@@ -282,13 +282,13 @@ class StackTop extends StatelessWidget {
                           children: <Widget>[
                             Text(
                               /*prefix0.locs[0]*/ fromlocation! +
-                                  /* ' Beauty and old place */ '\n (City name Can have any lentgh)',
+                                  /* ' Beauty and old place */ '\n-\t\t-\n-\t\t-\n-\t\t-',
                               style: TextStyle(fontSize: 16.0),
                               // key: from,
                             ),
                             Divider(
                               color: Colors.black12,
-                              height: prefix0.height! * .04,
+                              height: prefix0.height! * .004,
                             ),
                             Text(
                               /*prefix0.locs[1]*/ tolocation! /*+ ' Imam reza Holy Shrine'*/,
