@@ -13,6 +13,7 @@ String? tolocation;
 
 class SecondPage extends StatelessWidget {
   final String? fromloc;
+
   final String? toloc;
   SecondPage({this.fromloc, this.toloc});
 

@@ -18,9 +18,9 @@ void main() {
 //okay kita tukar lagi
 
 ThemeData appTheme = ThemeData(
-    primaryColor: Colors.black,
+    primaryColor: Colors.yellow[800],
     /* Colors.tealAccent,*/
-    secondaryHeaderColor: Colors.pink /* Colors.teal*/
+    secondaryHeaderColor: Color(0xFFF0C640) /* Colors.teal*/
     // fontFamily:
     );
 
@@ -52,7 +52,7 @@ class HomeScreenState extends State<login> {
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        color: Colors.pink[900],
+        color: Color(0xFFF0C640),
         child: Stack(
           children: <Widget>[
             Align(
@@ -78,10 +78,9 @@ class HomeScreenState extends State<login> {
                     Material(
                         elevation: 10.0,
                         borderRadius:
-                            const BorderRadius.all(Radius.circular(50.0)),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                        )),
+                            const BorderRadius.all(Radius.circular(15.0)),
+                        child: Image.asset('assets/images/scr-logo.png',
+                            scale: 1.1)),
                     Form(
                       child: InputField(
                           //Calling inputField  class
@@ -237,8 +236,8 @@ class HomeScreen extends StatelessWidget {
                           child: Image.asset('assets/images/gmail.png'),
                           onPressed: () async {
                             const url =
-                                'mailto:adibazhar0601@gmail.com?subject=I am interested with your offer.';
-                            // const url = 'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=hasanmahani08@gmail.com&su=I+am+using+MIN+pa08+so&ui=2&tf=1';
+                                'mailto:habibdanial1010@gmail.com?subject=I am interested with your offer.';
+                            // const url = 'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=habibdanial1010@gmail.com&su=I+am+using+MIN+pa08+so&ui=2&tf=1';
                             if (await canLaunch(url)) {
                               await launch(url);
                             } else {
@@ -260,7 +259,8 @@ class HomeScreen extends StatelessWidget {
                           ),
                           child: Image.asset('assets/images/instagram.png'),
                           onPressed: () async {
-                            const url = 'https://www.instagram.com/adibazhar_/';
+                            const url =
+                                'https://www.instagram.com/_habibdanial/';
                             if (await canLaunch(url)) {
                               await launch(url);
                             } else {
