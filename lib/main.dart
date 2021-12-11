@@ -425,6 +425,56 @@ class _HomeTop extends State<HomeTop> {
                                 ),
                               ),
                               value: 1,
+                            ),
+                            PopupMenuItem(
+                              child: Text(
+                                locs[2],
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 16.0,
+                                ),
+                              ),
+                              value: 2,
+                            ),
+                            PopupMenuItem(
+                              child: Text(
+                                locs[3],
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 16.0,
+                                ),
+                              ),
+                              value: 3,
+                            ),
+                            PopupMenuItem(
+                              child: Text(
+                                locs[4],
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 16.0,
+                                ),
+                              ),
+                              value: 4,
+                            ),
+                            PopupMenuItem(
+                              child: Text(
+                                locs[5],
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 16.0,
+                                ),
+                              ),
+                              value: 5,
+                            ),
+                            PopupMenuItem(
+                              child: Text(
+                                locs[6],
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 16.0,
+                                ),
+                              ),
+                              value: 6,
                             )
                           ];
                         },
