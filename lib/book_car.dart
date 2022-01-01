@@ -255,7 +255,7 @@ class _BookCarState extends State<BookCar> {
                         children: [
                           buildSpecificationCar("Color", "White"),
                           buildSpecificationCar("Gearbox", "Automatic"),
-                          buildSpecificationCar("Seat", "4"),
+                          buildSpecificationCar("Seat", "5"),
                           buildSpecificationCar("Motor", "v10 2.0"),
                           buildSpecificationCar("Speed (0-100)", "3.2 sec"),
                           buildSpecificationCar("Top Speed", "121 mph"),
