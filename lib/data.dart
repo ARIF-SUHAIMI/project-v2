@@ -63,9 +63,9 @@ List<Car> getCarList() {
       2200,
       "Monthly",
       [
-        "assets/images/acura_0.png",
-        "assets/images/acura_1.png",
-        "assets/images/acura_2.png",
+        "assets/images/bezza_front.png",
+        "assets/images/bezza_side.png",
+        "assets/images/bezza_back.png",
       ],
     ),
     Car(
