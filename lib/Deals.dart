@@ -32,7 +32,7 @@ class _AvailableCarsState extends State<AvailableCars> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[100],
+      backgroundColor: Colors.yellow[800],
       body: SafeArea(
         child: Container(
           width: double.infinity,
@@ -102,18 +102,18 @@ class _AvailableCarsState extends State<AvailableCars> {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 90,
+        height: 0,
         decoration: BoxDecoration(
           color: Colors.white,
         ),
-        child: Row(
+        /*child: Row(
           children: [
             buildFilterIcon(),
             Row(
               children: buildFilters(),
             ),
           ],
-        ),
+        ),*/
       ),
     );
   }

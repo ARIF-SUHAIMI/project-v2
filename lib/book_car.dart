@@ -194,7 +194,7 @@ class _BookCarState extends State<BookCar> {
                           children: [
                             buildPricePerPeriod(
                               "12",
-                              "4.350",
+                              widget.car.price.toString(),
                               true,
                             ),
                             SizedBox(
@@ -296,7 +296,7 @@ class _BookCarState extends State<BookCar> {
                 Row(
                   children: [
                     Text(
-                      "RM 4,350",
+                      "RM " + widget.car.price.toString(),
                       style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
@@ -378,7 +378,7 @@ class _BookCarState extends State<BookCar> {
               price,
               style: TextStyle(
                 color: selected ? Colors.white : Colors.black,
-                fontSize: 24,
+                fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
             ),

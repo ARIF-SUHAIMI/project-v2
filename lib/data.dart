@@ -48,20 +48,18 @@ List<Car> getCarList() {
       ],
     ),
     Car(
-      "Nissan",
-      "GTR",
+      "Perodua",
+      "Kelisa",
       1100,
-      "Daily",
+      "Hourly",
       [
-        "assets/images/nissan_gtr_0.png",
-        "assets/images/nissan_gtr_1.png",
-        "assets/images/nissan_gtr_2.png",
-        "assets/images/nissan_gtr_3.png",
+        "assets/images/kelisa_front.jpg",
+        "assets/images/kelisa_back.jpg",
       ],
     ),
     Car(
-      "Acura",
-      "MDX 2020",
+      "Perodua",
+      "Bezza",
       2200,
       "Monthly",
       [
