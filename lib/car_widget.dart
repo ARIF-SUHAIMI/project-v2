@@ -76,9 +76,11 @@ Widget buildCar(Car car, int index) {
           "per " +
               (car.condition == "Daily"
                   ? "day"
-                  : car.condition == "Weekly"
-                      ? "week"
-                      : "month"),
+                  : car.condition == "Hourly"
+                      ? "hour"
+                      : car.condition == "Weekly"
+                          ? "week"
+                          : "month"),
           style: TextStyle(
             fontSize: 14,
             color: Colors.grey,

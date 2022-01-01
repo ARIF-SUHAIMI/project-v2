@@ -155,7 +155,7 @@ class _AvailableCarsState extends State<AvailableCars> {
         });
       },
       child: Padding(
-        padding: EdgeInsets.only(right: 16),
+        padding: EdgeInsets.only(right: 10),
         child: Text(
           filter.name,
           style: TextStyle(

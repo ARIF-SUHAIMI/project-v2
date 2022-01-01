@@ -28,23 +28,23 @@ class Car {
 List<Car> getCarList() {
   return <Car>[
     Car(
-      "Land Rover",
-      "Discovery",
+      "Perodua",
+      "Kancil",
       2580,
-      "Weekly",
+      "Hourly",
       [
-        "assets/images/land_rover_0.png",
-        "assets/images/land_rover_1.png",
-        "assets/images/land_rover_2.png",
+        "assets/images/kancil_front.jpg",
+        "assets/images/kancil_back.jpg",
       ],
     ),
     Car(
-      "Alfa Romeo",
-      "C4",
+      "Perodua",
+      "Myvi",
       3580,
-      "Monthly",
+      "Hourly",
       [
-        "assets/images/alfa_romeo_c4_0.png",
+        "assets/images/myvi_front.png",
+        "assets/images/myvi_side.png",
       ],
     ),
     Car(
@@ -174,7 +174,7 @@ class Filter {
 List<Filter> getFilterList() {
   return <Filter>[
     Filter("Best Match"),
-    Filter("Highest Price"),
-    Filter("Lowest Price"),
+    Filter("High Price"),
+    Filter("Low Price"),
   ];
 }
