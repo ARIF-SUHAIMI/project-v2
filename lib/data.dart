@@ -69,14 +69,14 @@ List<Car> getCarList() {
       ],
     ),
     Car(
-      "Chevrolet",
-      "Camaro",
+      "Perodua",
+      "Axia",
       3400,
       "Weekly",
       [
-        "assets/images/camaro_0.png",
-        "assets/images/camaro_1.png",
-        "assets/images/camaro_2.png",
+        "assets/images/axxia_front.png",
+        "assets/images/axia_side.png",
+        "assets/images/axia_back.png",
       ],
     ),
     Car(
