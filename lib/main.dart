@@ -27,7 +27,12 @@ ThemeData appTheme = ThemeData(
 int sel = 0;
 double? width;
 double? height;
-final bodies = [HomeScreen(), WishList(), Deals(), prefix0.Notification()];
+final bodies = [
+  HomeScreen(),
+  WishList(),
+  AvailableCars(),
+  prefix0.Notification()
+];
 
 class BottomNav extends StatefulWidget {
   BottomNav({Key? key}) : super(key: key);

@@ -1,10 +1,3 @@
-import 'package:flutter/material.dart';
-import 'Notifications.dart' as prefix0;
-import 'package:url_launcher/url_launcher.dart';
-import 'Deals.dart';
-import 'SecondPage.dart';
-import 'WishList.dart';
-import 'main.dart';
 import 'car_widget.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
