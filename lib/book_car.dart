@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'data.dart';
+import 'payment.dart';
 
 class BookCar extends StatefulWidget {
   final Car car;
@@ -319,7 +320,25 @@ class _BookCarState extends State<BookCar> {
             ),
             Container(
               height: 50,
-              decoration: BoxDecoration(
+              child: RaisedButton(
+                //Raised Button
+
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => Payment(car: widget.car)));
+                },
+
+                color: Colors.indigo,
+                textColor: Colors.white,
+                child: const Text(
+                  "Book this car",
+                  style: TextStyle(fontSize: 16.0),
+                ),
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(15.0),
+
+                    /*decoration: BoxDecoration(
                 color: kPrimaryColor,
                 borderRadius: BorderRadius.all(
                   Radius.circular(15),
@@ -333,8 +352,7 @@ class _BookCarState extends State<BookCar> {
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 16,
-                    ),
+                      fontSize: 16,*/
                   ),
                 ),
               ),
