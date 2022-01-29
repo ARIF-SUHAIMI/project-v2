@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:tutvideo/bayar.dart';
 import 'Notifications.dart' as prefix0;
 import 'package:url_launcher/url_launcher.dart';
 import 'Deals.dart';
 import 'SecondPage.dart';
 import 'WishList.dart';
 import 'input_field.dart';
+import 'data.dart';
 
 void main() {
+  Car car;
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: login(),
@@ -27,12 +30,7 @@ ThemeData appTheme = ThemeData(
 int sel = 0;
 double? width;
 double? height;
-final bodies = [
-  HomeScreen(),
-  WishList(),
-  AvailableCars(),
-  prefix0.Notification()
-];
+final bodies = [HomeScreen(), AvailableCars()];
 
 class BottomNav extends StatefulWidget {
   BottomNav({Key? key}) : super(key: key);
@@ -149,7 +147,7 @@ class _BottomNavState extends State<BottomNav> {
           color: Colors.black,
         ),
         label: "Home"));
-    items.add(BottomNavigationBarItem(
+    /*items.add(BottomNavigationBarItem(
         activeIcon: Icon(
           Icons.favorite,
           color: appTheme.primaryColor,
@@ -158,7 +156,7 @@ class _BottomNavState extends State<BottomNav> {
           Icons.favorite,
           color: Colors.black,
         ),
-        label: "Liked"));
+        label: "Liked"));*/
     items.add(BottomNavigationBarItem(
         activeIcon: Icon(
           Icons.local_offer,
@@ -169,7 +167,7 @@ class _BottomNavState extends State<BottomNav> {
           color: Colors.black,
         ),
         label: "Sales"));
-    items.add(BottomNavigationBarItem(
+    /*items.add(BottomNavigationBarItem(
         activeIcon: Icon(
           Icons.notifications,
           color: appTheme.primaryColor,
@@ -178,7 +176,8 @@ class _BottomNavState extends State<BottomNav> {
           Icons.notifications,
           color: Colors.black,
         ),
-        label: "Notifications"));
+        label: "Notifications")
+        );*/
     return items;
   }
 
